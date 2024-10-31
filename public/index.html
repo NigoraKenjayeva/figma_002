@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/img/1713928923382.png">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Hubert_Figma</title>
+    <style>
+        .menu-hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class=" p-4">
+        <div class="bg-transparent container max-w-[1200px] mx-auto flex justify-between items-center">
+            <img class="w-[200px]" src="/assets/img/BR002308.webp" alt="dowland">
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-green-300 focus:outline-none">
+                    <svg xmlns="" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+            <ul id="menu" class="hidden md:flex space-x-4">
+                <li><a href="#" class=" hover:text-blue-300">КАТАЛОГ</a></li>
+                <li><a href="#" class=" hover:text-blue-300">КАТАЛОГ</a></li>
+                <li><a href="#" class=" hover:text-blue-300">КАТАЛОГ</a></li>
+                <li><a href="#" class=" hover:text-blue-300">КАТАЛОГ</a></li>
+                <li><a href="#" class=" hover:text-blue-300">КАТАЛОГ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="menu-hidden bg-green-300 p-4 md:hidden">
+        <ul class="flex flex-col space-y-2">
+            <li><a href="#" class="text-white  hover:text-blue-300">КАТАЛОГ</a></li>
+            <li><a href="#" class="text-white  hover:text-blue-300">КАТАЛОГ</a></li>
+            <li><a href="#" class="text-white  hover:text-blue-300">КАТАЛОГ</a></li>
+            <li><a href="#" class="text-white  hover:text-blue-300">КАТАЛОГ</a></li>
+            <li><a href="#" class="text-white  hover:text-blue-300">КАТАЛОГ</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('menu-hidden');
+        });
+    </script>
+</body>
+</html>
+
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
