@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./public/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'bgimage':'url("/assets/img/Mask group (3).jpg")'
+      }
+    },
   },
   plugins: [],
 }
